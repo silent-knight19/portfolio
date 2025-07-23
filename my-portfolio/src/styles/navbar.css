@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+   
+.navbar {
+    display: flex;
+    justify-content:start;
+    align-items:flex-start;
+    background-color: #f8f8f8;
+    color: #fff;
+    padding: 10px;
+    gap: 20px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+}
