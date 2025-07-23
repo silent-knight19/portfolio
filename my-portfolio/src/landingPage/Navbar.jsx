@@ -12,21 +12,24 @@ function Navbar() {
 
   return (
     <nav className="navbar">
-      <Link to="/" className={isActive('/')}>
-        Home
-      </Link>
-      <Link to="/about" className={isActive('/about')}>
-        About
-      </Link>
-      <Link to="/projects" className={isActive('/projects')}>
-        Projects
-      </Link>
-      <Link to="/skills" className={isActive('/skills')}>
-        Skills
-      </Link>
-      <Link to="/contact" className={isActive('/contact')}>
-        Contact
-      </Link>
+      <div className="navbar-links">
+        <Link to="/" className={`nav-link ${isActive('/')}`}>
+          Home
+        </Link>
+        <Link to="/about" className={`nav-link ${isActive('/about')}`}>
+          About
+        </Link>
+        <Link to="/projects" className={`nav-link ${isActive('/projects')}`}>
+          Projects
+        </Link>
+        <Link to="/skills" className={`nav-link ${isActive('/skills')}`}>
+          Skills
+        </Link>
+        <Link to="/contact" className={`nav-link ${isActive('/contact')}`}>
+          Contact
+        </Link>
+      </div>
+      <div className="navbar-name">Sachin Singh</div>
     </nav>
   );
 }

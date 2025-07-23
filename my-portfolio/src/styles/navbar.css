@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
-   
+
 /* Modern Navbar Styles */
 .navbar {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
     background-color: #f8f8f8;
     padding: 1.5rem 5%;
@@ -13,9 +13,21 @@
     top: 0;
     z-index: 1000;
     transition: all 0.3s ease;
+    font-size: 1rem;
 }
 
-.navbar a {
+.navbar-links {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-name {
+    font-weight: 800;
+    font-size: 2rem;
+    color: #333;
+}
+
+.nav-link {
     color: #333333;
     text-decoration: none;
     font-weight: 500;
@@ -26,17 +38,17 @@
     transition: all 0.3s ease;
 }
 
-.navbar a:hover {
+.nav-link:hover {
     color: #2563eb;
 }
 
 /* Active state for navigation items */
-.navbar a.active {
+.nav-link.active {
     color: #2563eb;
-    font-weight: 600;
+    font-weight: 500;
 }
 
-.navbar a::after {
+.nav-link::after {
     content: '';
     position: absolute;
     width: 0;
@@ -47,25 +59,19 @@
     transition: width 0.3s ease;
 }
 
-.navbar a:hover::after,
-.navbar a.active::after {
+.nav-link:hover::after,
+.nav-link.active::after {
     width: 100%;
-}
-
-/* Smooth scrolling for anchor links */
-html {
-    scroll-behavior: smooth;
 }
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
     .navbar {
         padding: 1rem 5%;
-        justify-content: center;
     }
     
-    .navbar a {
+    .nav-link {
         margin: 0 0.8rem;
-        font-size: 0.9rem;
+        font-size:10px;
     }
 }
