@@ -1,0 +1,64 @@
+.projects {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 2rem;
+    padding: 2rem;
+    padding-left: 10%;
+    padding-right: 10%;
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
+    animation: fadeIn 1s ease-in-out;
+    background-color: #f8f8f8;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin: 2rem 0;
+    border-radius: 1rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+    }
+}
+
+.projects > * {
+    transition: all 0.5s ease-in-out;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.projects > *:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+
+a{
+    text-decoration: none;
+    color: #0316df;
+    font-weight: 600;
+    align-self: center;
+    justify-self: center;
+    font-size: 1.7rem;
+    transition: all 0.3s ease;
+    &:hover {
+        color: #0316df;
+    }
+}
