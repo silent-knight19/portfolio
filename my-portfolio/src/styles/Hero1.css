@@ -1,5 +1,7 @@
 
 
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
 /* Main container */
 .hero-container {
     width: 100%;
@@ -7,6 +9,7 @@
     display: flex;
     overflow: hidden;
     background-color: #f8f8f8;
+    font-family: 'Inter', sans-serif;
 }
 
 /* Left side - 50% width */
@@ -16,6 +19,7 @@
     flex-direction: column;
     height: 100%;
     background-color: #f8f8f8;
+    font-family: 'Inter', sans-serif;
 }
 
 /* Right side - 50% width */
@@ -25,25 +29,60 @@
     align-items: center;
     justify-content: center;
     background-color: #f8f8f8;
-    padding: 20px;
+    font-family: 'Inter', sans-serif;
+    height: 100%;
+    
 }
 
 /* Left top and bottom sections */
-.left-top,
-.left-bottom {
+.left-top
+{
     flex: 1; /* Each takes 50% of the left side */
     display: flex;
+    align-items: center;    
+    justify-content: center;
+    padding:    20px;
+    box-sizing: border-box;
+    background-color: #f8f8f8;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 20px;   
+    overflow-wrap: break-word;
+}
+.left-bottom {
+    display: flex;
+    width: 100%;    
+    box-sizing: border-box;
+}
+
+.stat-box {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 20px;
-    box-sizing: border-box;
-    background-color: #f8f8f8;
+    text-align: center;
+}
+
+.stat-box h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.stat-box p {
+    margin: 5px 0 0;
+    color: #666;
+    font-size: 1rem;
 }
 
 .left-top {
     background-color: #f8f8f8;
+    font-family: 'Inter', sans-serif;
 }
 
 .left-bottom {
     background-color: #f8f8f8;
+    font-family: 'Inter', sans-serif;
 }

@@ -1,15 +1,14 @@
-import { useState } from 'react'
-import Navbar from './landingPage/Navbar'
-import Hero1 from './landingPage/Hero1'
+import React from 'react'
+import Hero1 from './landingPage/Hero1';
+import Navbar from './landingPage/Navbar';
 
 function App() {
 
   return (
-    <>
-     <Navbar />
-     <Hero1 />
-
-      </>
+    <div>
+      <Navbar />
+      <Hero1 />
+    </div>
   )
 }
 

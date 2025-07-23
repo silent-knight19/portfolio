@@ -1,16 +1,15 @@
 import React from 'react'
-import '../styles/navbar.css'
+import '../styles/navbar.css';
+  
 function Navbar() {
-    return (
-        <div className='navbar' style={{ height:"150px"}}>
-            
-
-                <a href="#">About Me</a>
-                <a href="#">Projects</a>
-                <a href="#">Services</a>
-                <a href="#">Skills</a>
-                <a href="#">Contact</a>
-        </div>
-    )
+  return (
+    <nav className="navbar">
+      <a href="#" textDecoration="none">About</a>
+      <a href="#" textDecoration="none">Projects</a>
+      <a href="#" textDecoration="none">Skills</a>
+      <a href="#" textDecoration="none">Contact</a>
+    </nav>
+  );
 }
+
 export default Navbar;
