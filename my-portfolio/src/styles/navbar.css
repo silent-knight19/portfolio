@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
-
    
 /* Modern Navbar Styles */
 .navbar {
@@ -24,11 +23,17 @@
     margin: 0 1.2rem;
     padding: 0.5rem 0;
     position: relative;
-    transition: color 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 .navbar a:hover {
     color: #2563eb;
+}
+
+/* Active state for navigation items */
+.navbar a.active {
+    color: #2563eb;
+    font-weight: 600;
 }
 
 .navbar a::after {
@@ -42,8 +47,14 @@
     transition: width 0.3s ease;
 }
 
-.navbar a:hover::after {
+.navbar a:hover::after,
+.navbar a.active::after {
     width: 100%;
+}
+
+/* Smooth scrolling for anchor links */
+html {
+    scroll-behavior: smooth;
 }
 
 /* Responsive adjustments */
