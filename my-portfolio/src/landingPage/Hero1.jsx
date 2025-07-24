@@ -33,10 +33,10 @@ function Hero() {
                         </div>
                     </div>
                     
-                    <button className="cta-button">
+                    <a href="https://www.linkedin.com/in/sachin-singh-2b980a376/" target="_blank" rel="noopener noreferrer" className="cta-button">
                         <FaRocket className="button-icon" />
-                        <a href="https://www.linkedin.com/in/sachin-singh-2b980a376/" target="_blank" rel="noopener noreferrer">Let's Connect</a>
-                    </button>
+                        Let's Connect
+                    </a>
                 </div>  
                 
                 <div className="left-bottom">
