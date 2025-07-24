@@ -5,7 +5,7 @@ import Hero1 from "./landingPage/Hero1";
 import AboutPage from "./About/AboutPage";
 import Contact from "./contact/Contact";
 import Projects from "./projects/Projects";
-import Skills from "./skills/skills";
+import Skills from "./skills/Skills";
 function App() {
   return (
     <Router>
