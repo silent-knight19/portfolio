@@ -29,7 +29,7 @@ function Navbar() {
           Contact
         </Link>
       </div>
-      <div className="navbar-name">Sachin Singh</div>
+      <div className="navbar-name">𝚂𝚊𝚌𝚑𝚒𝚗 * 𝚂𝚒𝚗𝚐𝚑</div>
     </nav>
   );
 }

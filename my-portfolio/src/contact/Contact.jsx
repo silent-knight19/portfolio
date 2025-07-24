@@ -7,7 +7,7 @@ const Contact = () => {
         {
             icon: <FaLinkedin className="contact-icon" />,
             text: 'Connect on LinkedIn',
-            url: 'https://linkedin.com/in/sachin-kumar-singh-5a647a269/',
+            url: 'https://www.linkedin.com/in/sachin-singh-2b980a376/',
             color: '#0077b5',
             label: 'LinkedIn Profile'
         },
@@ -21,7 +21,7 @@ const Contact = () => {
         {
             icon: <FaTwitter className="contact-icon" />,
             text: 'Follow on Twitter',
-            url: 'https://twitter.com/sachinkumarsingh1906',
+            url: 'https://x.com/_Sachin_Singh19',
             color: '#1DA1F2',
             label: 'Twitter Profile'
         },

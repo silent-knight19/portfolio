@@ -7,13 +7,15 @@
     padding: 6rem 2rem;
     margin-left: 0;
     margin-right: 0;
-    background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+    background: linear-gradient(135deg, #f8f8f8 0%, #f8f8f8 100%);
 }
 
 .contact-container {
     max-width: 1200px;
     margin: 0 auto;
     width: 100%;
+    box-sizing: border-box;
+    background-color: #f8f8f8;
 }
 
 .contact-header {
@@ -55,7 +57,7 @@
     position: relative;
     border-radius: 16px;
     overflow: hidden;
-    background: rgba(255, 255, 255, 0.8);
+    background: #f8f8f8;
     backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.2);
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
@@ -95,7 +97,7 @@
     margin-bottom: 1.5rem;
     font-size: 2rem;
     transition: all 0.3s ease;
-    background: rgba(0, 0, 0, 0.03) !important;
+    background: #f8f8f8 !important;
 }
 
 .contact-card:hover .icon-wrapper {

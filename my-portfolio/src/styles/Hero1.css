@@ -1,15 +1,36 @@
 
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+    --primary-color: #2563eb;
+    --text-color: #1f2937;
+    --text-light: #6b7280;
+    --background: #f8f8f8;
+    --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+}
 
 /* Main container */
 .hero-container {
     width: 100%;
-    height: 100vh; /* Full viewport height */
+    min-height: 100vh;
     display: flex;
+    background-color: var(--background);
+    padding: 0 5%;
+    position: relative;
     overflow: hidden;
-    background-color: #f8f8f8;
-    font-family: 'Inter', sans-serif;
 }
 
 /* Left side - 50% width */
@@ -17,9 +38,9 @@
     width: 50%;
     display: flex;
     flex-direction: column;
-    height: 100%;
-    background-color: #f8f8f8;
-    font-family: 'Inter', sans-serif;
+    justify-content: center;
+    padding: 4rem 2rem 4rem 0;
+    z-index: 1;
 }
 
 /* Right side - 50% width */
@@ -28,31 +49,129 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #f8f8f8;
-    font-family: 'Inter', sans-serif;
-    height: 100%;
-    
+    position: relative;
 }
 
-/* Left top and bottom sections */
-.left-top
-{
-    flex: 1; /* Each takes 50% of the left side */
-    display: flex;
-    align-items: center;    
-    justify-content: center;
-    padding:    20px;
-    box-sizing: border-box;
-    background-color: #f8f8f8;
-    font-family: 'Inter', sans-serif;
-    font-weight: 600;
-    font-size: 20px;   
-    overflow-wrap: break-word;
+.right-side img {
+    max-width: 80%;
+    height: auto;
+    border-radius: 10px;
 }
+
+/* Left top content */
+.left-top {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 2rem;
+}
+
+.greeting {
+    font-size: 3.5rem;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+    color: var(--text-color);
+}
+
+.highlight {
+    color: var(--primary-color);
+    position: relative;
+    display: inline-block;
+}
+
+.highlight::after {
+    content: '';
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    width: 100%;
+    height: 8px;
+    background-color: rgba(37, 99, 235, 0.2);
+    z-index: -1;
+    border-radius: 4px;
+}
+
+.tagline {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--text-light);
+    margin-bottom: 2rem;
+}
+
+.intro-text {
+    font-size: 1.1rem;
+    color: var(--text-light);
+    margin-bottom: 2.5rem;
+    line-height: 1.8;
+}
+
+/* Expertise section */
+.expertise {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 2.5rem;
+}
+
+.expertise-item {
+    display: flex;
+    align-items: center;
+    background: white;
+    padding: 0.75rem 1.25rem;
+    border-radius: 50px;
+    box-shadow: var(--shadow);
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.expertise-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.icon {
+    margin-right: 8px;
+    color: var(--primary-color);
+    font-size: 1rem;
+}
+
+/* CTA Button */
+.cta-button {
+    display: inline-flex;
+    align-items: center;
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px -1px rgba(37, 99, 235, 0.3), 0 2px 4px -1px rgba(37, 99, 235, 0.2);
+    max-width: fit-content;
+}
+
+.cta-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 15px -3px rgba(37, 99, 235, 0.3), 0 4px 6px -2px rgba(37, 99, 235, 0.2);
+    background: #1d4ed8;
+}
+
+.button-icon {
+    margin-right: 10px;
+    font-size: 1rem;
+}
+
+/* Stats section */
 .left-bottom {
     display: flex;
-    width: 100%;    
-    box-sizing: border-box;
+    justify-content: space-between;
+    padding: 1.5rem 0;
+    margin-top: 1rem;
 }
 
 .stat-box {
@@ -61,28 +180,89 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 20px;
-    text-align: center;
+    padding: 1rem;
+    background: white;
+    border-radius: 12px;
+    margin: 0 0.5rem;
+    box-shadow: var(--shadow);
+    transition: transform 0.3s ease;
+}
+
+.stat-box:first-child {
+    margin-left: 0;
+}
+
+.stat-box:last-child {
+    margin-right: 0;
+}
+
+.stat-box:hover {
+    transform: translateY(-5px);
 }
 
 .stat-box h1 {
     margin: 0;
-    font-size: 2.5rem;
-    color: #333;
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    line-height: 1;
+    margin-bottom: 0.5rem;
 }
 
 .stat-box p {
-    margin: 5px 0 0;
-    color: #666;
-    font-size: 1rem;
+    margin: 0;
+    color: var(--text-light);
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-align: center;
 }
 
-.left-top {
-    background-color: #f8f8f8;
-    font-family: 'Inter', sans-serif;
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .greeting {
+        font-size: 3rem;
+    }
+    
+    .tagline {
+        font-size: 1.3rem;
+    }
+    
+    .expertise {
+        flex-direction: column;
+    }
 }
 
-.left-bottom {
-    background-color: #f8f8f8;
-    font-family: 'Inter', sans-serif;
+@media (max-width: 768px) {
+    .hero-container {
+        flex-direction: column;
+        padding: 2rem 5%;
+        min-height: auto;
+    }
+    
+    .left-side, .right-side {
+        width: 100%;
+        padding: 2rem 0;
+    }
+    
+    .right-side {
+        order: -1;
+        padding-top: 4rem;
+    }
+    
+    .right-side img {
+        max-width: 70%;
+    }
+    
+    .left-top {
+        padding: 2rem 0;
+    }
+    
+    .greeting {
+        font-size: 2.5rem;
+    }
+    
+    .cta-button {
+        width: 100%;
+        justify-content: center;
+    }
 }
