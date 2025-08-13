@@ -7,6 +7,16 @@ const Projects = () => {
             <p>As a seasoned MERN Stack Developer, I excel in architecting and deploying high-performance, full-stack web applications leveraging MongoDB, Express.js, React, and Node.js. My extensive experience spans diverse domains, from real-time communication platforms to complex financial and logistics systems. I'm adept at translating intricate business requirements into elegant, scalable technical solutions, always prioritizing security, performance, and maintainability.</p>
         </div>
         <div className='projects' style={{width:"80%",margin:"auto"}}>
+            <h1>Employee Management System: Scalable, Role-Based  Application for Efficient User Management</h1>
+            <p>Developed a responsive, role-based Employee Management System using React.js (v18), powered by Vite (v5.2) for lightning-fast builds and development cycles. Engineered secure user authentication with protected routes and session handling, ensuring controlled access for Admin and Employee roles.
+            <br/><br/>
+            Built an Admin Dashboard featuring employee oversight, task assignment/tracking, and performance analytics; streamlined admin operations by approximately 30% through enhanced UI workflows and state management via Context API. Designed an Employee Dashboard where users can view tasks, update statuses, submit work, and monitor personal performance metrics—boosting task completion visibility and accountability by an estimated 25%.
+            <br/><br/>
+            Integrated task management features including creation, priority setting, deadline tracking, commenting, and collaboration tools—reducing miscommunication and overdue tasks by ~20%. Maintained clean code quality using CSS Modules for modular styling, React Router for navigation, Context API for centralized state, and ESLint for linting and consistency.
+            </p>
+            <a href="https://github.com/silent-knight19/EMS" target="_blank" rel="noopener noreferrer">GitHub →</a>
+        </div>
+        <div className='projects' style={{width:"80%",margin:"auto"}}>
             <h1>Zerodhaa - Advanced Financial Trading Platform</h1>
             <p>This wasn't just a basic stock tracker; it was a deep dive into the complexities of a leading financial trading platform. I engineered a comprehensive web application inspired by giants like Zerodha, demonstrating my ability to handle high-frequency data streams, build intuitive, low-latency user interfaces for financial interactions, and seamlessly integrate with real-time market data APIs. This project pushed the boundaries of data visualization, order management systems (OMS), and risk management, all while ensuring robust authentication and authorization mechanisms. The backend was designed to handle concurrent user requests and maintain data integrity under significant load, typical of financial applications.
 
